@@ -1,21 +1,219 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Em breve</title>
-  <style>
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center;
-           font-family: system-ui, sans-serif; background: #f6f7f9; color: #1c2430; }
-    main { text-align: center; padding: 16px; }
-    h1 { font-size: 2rem; margin: 0 0 8px; }
-    p { margin: 0; color: #556070; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escola do Bolso · Planilhas e guias para entender o seu dinheiro</title>
+<meta name="description" content="Planilhas de Excel prontas e guias em PDF para entender salário, patrimônio, juros e investimentos. É só preencher os campos amarelos.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Escola do Bolso">
+<meta property="og:description" content="Planilhas prontas e guias simples para entender o seu dinheiro.">
+<meta property="og:image" content="assets/img/capa-1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <main>
-    <h1>Em breve</h1>
-    <p>Ferramentas práticas para organizar, simular e acompanhar seus investimentos.</p>
-  </main>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#topo" aria-label="Escola do Bolso, início"><img src="assets/icone.svg" alt=""><span>Escola do <b>Bolso</b></span></a>
+    <nav aria-label="Principal">
+      <a class="link" href="#como-funciona">Como funciona</a>
+      <a class="link" href="#materiais">Materiais</a>
+      <a class="link" href="#duvidas">Dúvidas</a>
+      <a class="btn btn-green" href="#kit">Quero o kit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">Planilhas + guias em PDF</span>
+        <h1>Entenda o seu dinheiro <em>sem complicação</em>.</h1>
+        <p>Planilhas de Excel prontas e guias passo a passo sobre salário, patrimônio, juros e investimentos. Você só preenche os campos amarelos: a conta é feita para você.</p>
+        <div class="acoes">
+          <a class="btn btn-green" href="#kit">Ver o kit completo</a>
+          <a class="btn btn-ghost" href="#materiais">Conhecer os materiais</a>
+        </div>
+        <ul class="garantias">
+          <li>Pronto para usar</li>
+          <li>Linguagem simples</li>
+          <li>Receba logo após a compra</li>
+        </ul>
+      </div>
+      <div class="leque" aria-hidden="true">
+        <img src="assets/img/capa-1.jpg" alt="">
+        <img src="assets/img/capa-3.jpg" alt="">
+        <img src="assets/img/capa-4.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="wrap center">
+      <h2>Simples assim</h2>
+      <p class="sub">Sem fórmula para montar, sem termo difícil. Em minutos você vê os seus números.</p>
+      <div class="passos">
+        <div class="passo"><div class="num">1</div><h3>Escolha</h3><p>Pegue um material ou o kit com os cinco.</p></div>
+        <div class="passo"><div class="num">2</div><h3>Receba</h3><p>A planilha de Excel e o guia em PDF chegam por e-mail logo depois da compra.</p></div>
+        <div class="passo"><div class="num">3</div><h3>Preencha</h3><p>Digite os seus valores nas células <span class="amarelo">amarelas</span>. O resultado aparece na hora.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="materiais" class="cinza">
+    <div class="wrap">
+      <div class="center">
+        <h2>Cinco materiais, do salário ao investimento</h2>
+        <p class="sub">Cada um vem com uma planilha de Excel e um guia em PDF interativo. Comece por qualquer um.</p>
+      </div>
+      <div class="grade">
+        <article class="card">
+          <div class="capa"><img src="assets/img/capa-1.jpg" alt="Capa do guia Renda Líquida Real" loading="lazy"></div>
+          <div class="corpo">
+            <span class="aula">Material 1</span>
+            <h3>Renda líquida real</h3>
+            <p>Descubra quanto do seu salário e dos seus dividendos chega de verdade na sua conta.</p>
+            <ul><li>Simulador de INSS e imposto de renda 2026</li><li>Dividendos, JCP e fundos imobiliários</li><li>Guia com exemplos</li></ul>
+            <div class="preco-linha"><span class="preco">R$ 19,90<small>pagamento único</small></span><a class="btn btn-green comprar" href="#breve" data-produto="Renda líquida real">Comprar</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="capa"><img src="assets/img/capa-2.jpg" alt="Capa do guia Renda e Patrimônio" loading="lazy"></div>
+          <div class="corpo">
+            <span class="aula">Material 2</span>
+            <h3>Renda e patrimônio</h3>
+            <p>Veja quanto das suas contas o seu patrimônio já paga e quanto falta para a liberdade.</p>
+            <ul><li>Mapa do que vem do trabalho e do patrimônio</li><li>As quatro fases até a liberdade</li><li>Quanto falta acumular</li></ul>
+            <div class="preco-linha"><span class="preco">R$ 19,90<small>pagamento único</small></span><a class="btn btn-green comprar" href="#breve" data-produto="Renda e patrimônio">Comprar</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="capa"><img src="assets/img/capa-3.jpg" alt="Capa do guia Juros Compostos" loading="lazy"></div>
+          <div class="corpo">
+            <span class="aula">Material 3</span>
+            <h3>Juros compostos</h3>
+            <p>O mesmo motor que multiplica o investimento encarece o financiamento. Veja os dois lados.</p>
+            <ul><li>Investimento, financiamento e consórcio</li><li>Comparador: financiar, consórcio ou juntar</li><li>Tabela parcela a parcela</li></ul>
+            <div class="preco-linha"><span class="preco">R$ 19,90<small>pagamento único</small></span><a class="btn btn-green comprar" href="#breve" data-produto="Juros compostos">Comprar</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="capa"><img src="assets/img/capa-4.jpg" alt="Capa do guia Ativo ou Passivo" loading="lazy"></div>
+          <div class="corpo">
+            <span class="aula">Material 4</span>
+            <h3>Ativo ou passivo?</h3>
+            <p>Descubra o que põe e o que tira dinheiro do seu bolso todo mês, e o custo escondido de cada bem.</p>
+            <ul><li>Inventário com veredito automático</li><li>Custo real de carro, casa e outros bens</li><li>O teste do bolso</li></ul>
+            <div class="preco-linha"><span class="preco">R$ 19,90<small>pagamento único</small></span><a class="btn btn-green comprar" href="#breve" data-produto="Ativo ou passivo">Comprar</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="capa"><img src="assets/img/capa-5.jpg" alt="Capa do guia Tipos de Investimentos" loading="lazy"></div>
+          <div class="corpo">
+            <span class="aula">Material 5</span>
+            <h3>Tipos de investimentos</h3>
+            <p>Risco, liquidez, garantia e imposto dos principais investimentos do Brasil, lado a lado.</p>
+            <ul><li>Mapa de 13 tipos de investimento</li><li>Comparador de renda fixa já sem imposto</li><li>Tabelas de referência</li></ul>
+            <div class="preco-linha"><span class="preco">R$ 19,90<small>pagamento único</small></span><a class="btn btn-green comprar" href="#breve" data-produto="Tipos de investimentos">Comprar</a></div>
+          </div>
+        </article>
+        <article class="card card-kit">
+          <div class="corpo">
+            <span class="aula">Melhor escolha</span>
+            <h3>Os cinco juntos</h3>
+            <p>Leve o kit completo e pague menos do que quatro materiais avulsos.</p>
+            <div class="preco">R$ 67<small>em vez de R$ 99,50</small></div>
+            <a class="btn btn-green btn-full" href="#kit">Ver o kit</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="kit">
+    <div class="wrap">
+      <div class="kit">
+        <div>
+          <h2>Kit completo Escola do Bolso</h2>
+          <p class="sub">Os cinco materiais em sequência, do primeiro salário ao primeiro investimento.</p>
+          <ol>
+            <li>Renda líquida real</li>
+            <li>Renda e patrimônio</li>
+            <li>Juros compostos</li>
+            <li>Ativo ou passivo</li>
+            <li>Tipos de investimentos</li>
+          </ol>
+        </div>
+        <div class="oferta">
+          <div class="de">De R$ 99,50</div>
+          <div class="por">R$ 67</div>
+          <div class="economia">Você economiza R$ 32,50</div>
+          <a class="btn btn-green btn-full comprar" href="#breve" data-produto="O kit completo">Quero o kit completo</a>
+          <p class="miudo">5 planilhas de Excel + 5 guias em PDF · pagamento único</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sem-topo">
+    <div class="wrap center">
+      <h2>Veja por dentro</h2>
+      <p class="sub">Páginas reais dos guias. Cada um tem menu clicável e campos para você preencher no próprio PDF.</p>
+      <div class="dentro">
+        <img src="assets/img/pagina-1.jpg" alt="Página do guia Renda Líquida Real" loading="lazy">
+        <img src="assets/img/pagina-2.jpg" alt="Página do guia Renda e Patrimônio" loading="lazy">
+        <img src="assets/img/pagina-3.jpg" alt="Página do guia Juros Compostos" loading="lazy">
+        <img src="assets/img/pagina-4.jpg" alt="Página do guia Ativo ou Passivo" loading="lazy">
+        <img src="assets/img/pagina-5.jpg" alt="Página do guia Tipos de Investimentos" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="duvidas" class="cinza">
+    <div class="wrap">
+      <h2 class="center">Dúvidas</h2>
+      <div class="faq">
+        <details><summary>Preciso saber mexer no Excel?</summary><p>Não. Você só digita nas células amarelas; todo o resto é calculado sozinho. Cada planilha abre numa aba "Comece aqui" que explica o uso em três passos.</p></details>
+        <details><summary>Funciona no Google Planilhas ou no celular?</summary><p>As planilhas foram feitas e testadas no Microsoft Excel. Elas abrem em outros programas, mas gráficos e formatação podem mudar. Os guias em PDF abrem em qualquer leitor; os campos para preencher funcionam melhor no Adobe Reader.</p></details>
+        <details><summary>Como recebo os arquivos?</summary><p>Logo depois da confirmação do pagamento, você recebe por e-mail o acesso para baixar a planilha e o guia.</p></details>
+        <details><summary>Vocês indicam onde investir?</summary><p>Não. Os materiais são educativos: ensinam a entender e a comparar, com exemplos. Não recomendamos produtos, ativos nem instituições.</p></details>
+        <details><summary>As regras de imposto estão atualizadas?</summary><p>As regras usadas foram conferidas em novembro de 2026 e estão descritas em cada planilha. Leis mudam: antes de decidir, confirme as regras atuais.</p></details>
+        <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias para pedir o dinheiro de volta, como garante o Código de Defesa do Consumidor para compras pela internet.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#topo"><img src="assets/icone.svg" alt=""><span>Escola do <b>Bolso</b></span></a>
+    <p>Material educativo. Não é recomendação de investimento, consultoria financeira nem consultoria tributária. Os exemplos usam valores ilustrativos e não garantem resultados.</p>
+    <p>© 2026 Escola do Bolso</p>
+  </div>
+</footer>
+
+<dialog id="breve" aria-labelledby="breve-titulo">
+  <h3 id="breve-titulo">As vendas abrem em breve</h3>
+  <p><span id="breve-produto">Este material</span> estará disponível para compra nos próximos dias.</p>
+  <form method="dialog"><button class="btn btn-green btn-full">Entendi</button></form>
+</dialog>
+
+<script>
+  // Enquanto o checkout não estiver configurado, os botões com href="#breve" mostram um aviso.
+  // Para abrir as vendas, troque o href="#breve" de cada botão pelo link do checkout (veja o README).
+  document.querySelectorAll('a.comprar[href="#breve"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.getElementById('breve-produto').textContent = a.dataset.produto || 'Este material';
+      var d = document.getElementById('breve');
+      if (d.showModal) d.showModal(); else alert('As vendas abrem em breve.');
+    });
+  });
+</script>
 </body>
 </html>
