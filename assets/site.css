@@ -96,7 +96,7 @@ header .btn { min-height: 42px; padding: 0 20px; font-size: 15px; }
 .card-kit { background: var(--pale); border-color: #BFE6D3; }
 .card-kit .corpo { justify-content: center; text-align: center; }
 .card-kit .preco { margin: 8px 0 18px; font-size: 34px; }
-.card-kit { grid-column: span 2; }
+.card-kit { grid-column: auto; }
 .card-kit .corpo { max-width: 520px; margin: 0 auto; }
 
 /* Kit */
@@ -114,7 +114,7 @@ header .btn { min-height: 42px; padding: 0 20px; font-size: 15px; }
 .miudo { color: var(--grey); font-size: 13px; margin: 14px 0 0; }
 
 /* Por dentro */
-.dentro { display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px; margin-top: 36px; }
+.dentro { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 36px; }
 .dentro img { border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(18,38,63,.08); }
 
 /* Dúvidas */
@@ -146,7 +146,7 @@ dialog p { color: var(--grey); margin: 0 0 20px; }
   .hero-grid, .kit { grid-template-columns: 1fr; }
   .leque { height: 320px; max-width: 460px; }
   .grade { grid-template-columns: repeat(2, 1fr); }
-  .card-kit { grid-column: auto; }
+  .card-kit { grid-column: 1 / -1; }
   .dentro { grid-template-columns: repeat(4, 1fr); }
   nav a.link { display: none; }
 }
