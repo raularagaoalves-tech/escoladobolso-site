@@ -28,8 +28,9 @@ Se o material 1 mudar, gere o zip de novo com o guia e a planilha atualizados.
 
 ## Trocar preços
 
-Os preços aparecem como texto em `index.html`: `Grátis` (material 1), `R$ 15` (cada material pago), `R$ 80` (kit),
-`R$ 105` (soma dos avulsos) e a economia do kit. Use buscar e substituir. O preço cobrado de verdade é o do checkout.
+Os preços aparecem como texto em `index.html`: `Grátis` (material 1), `R$ 15` (materiais 2, 7 e 8),
+`R$ 20` (materiais 3 e 4), `R$ 25` (materiais 5 e 6), `R$ 90` (kit), `R$ 135` (soma dos avulsos) e a economia do
+kit (`R$ 45`). Como há preços repetidos, troque card a card, pelo `data-produto` do botão. O preço cobrado de verdade é o do checkout.
 
 ## Ver no computador
 
