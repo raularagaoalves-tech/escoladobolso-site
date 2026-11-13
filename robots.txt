@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://escoladobolso.com.br/sitemap.xml

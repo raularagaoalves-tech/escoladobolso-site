@@ -3,3 +3,5 @@
 *.jpg binary
 *.png binary
 *.zip binary
+CNAME text eol=lf
+*.txt text eol=lf

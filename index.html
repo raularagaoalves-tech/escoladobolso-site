@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Escola do Bolso · Planilhas e guias para entender o seu dinheiro</title>
 <meta name="description" content="Planilhas de Excel prontas e guias em PDF para entender salário, patrimônio, juros e investimentos. É só preencher os campos amarelos.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -244,17 +246,6 @@
   <form method="dialog"><button class="btn btn-green btn-full">Entendi</button></form>
 </dialog>
 
-<script>
-  // Enquanto o checkout não estiver configurado, os botões com href="#breve" mostram um aviso.
-  // Para abrir as vendas, troque o href="#breve" de cada botão pelo link do checkout (veja o README).
-  document.querySelectorAll('a.comprar[href="#breve"]').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.getElementById('breve-produto').textContent = a.dataset.produto || 'Este material';
-      var d = document.getElementById('breve');
-      if (d.showModal) d.showModal(); else alert('As vendas abrem em breve.');
-    });
-  });
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
