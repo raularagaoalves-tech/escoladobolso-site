@@ -7,7 +7,14 @@ Página única de vendas, servida pelo GitHub Pages a partir da raiz deste repos
 - `assets/icone.svg` e `assets/favicon.svg`: logo (moeda entrando no bolso).
 - `assets/img/`: capas e páginas dos guias, geradas a partir dos PDFs.
 - `assets/gratis/`: o material 1 (guia + planilha em zip), que é gratuito e baixado direto do site.
+- `termos.html` e `privacidade.html`: termos de uso e política de privacidade, gerados por `gerar_paginas_legais.py`.
 - `.nojekyll`: faz o Pages servir os arquivos como estão.
+
+## Dados da empresa
+
+A marca pertence à IACAO TEC PORTAIS DE CONTEUDO NA INTERNET LTDA, CNPJ 68.297.061/0001-04. Os dados aparecem no
+rodapé de `index.html` e nas páginas legais. Se o CNPJ, o e-mail ou o endereço mudarem, troque no rodapé de
+`index.html` e nas variáveis de `gerar_paginas_legais.py`, e depois rode `python gerar_paginas_legais.py`.
 
 Este repositório é público: não coloque aqui os arquivos dos produtos pagos (materiais 2 a 8). Só o material 1, gratuito, fica aqui. O botão de compra aponta para o
 checkout externo, que cobra e entrega o arquivo.
