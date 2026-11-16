@@ -16,6 +16,14 @@ MODELO = """<!doctype html>
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{titulo} · Escola do Bolso</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Escola do Bolso">
+<meta property="og:url" content="https://escoladobolso.com.br/{arquivo}">
+<meta property="og:title" content="{titulo} · Escola do Bolso">
+<meta property="og:image" content="https://escoladobolso.com.br/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="noindex">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fontes/PlusJakartaSans-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -113,6 +121,8 @@ PRIVACIDADE = """  <h1>Política de privacidade</h1>
   <ul>
     <li><b>Ao comprar:</b> nome, e-mail, CPF e dados do pedido, informados na plataforma de pagamento. Os dados de
     cartão ficam só com a plataforma; não os recebemos.</li>
+    <li><b>Ao pegar o material grátis:</b> nome e e-mail (e telefone, se você informar), na mesma plataforma
+    dos materiais pagos, para enviar o link de download.</li>
     <li><b>Ao se inscrever para receber dicas:</b> o seu e-mail.</li>
     <li><b>Ao falar com a gente:</b> o que você escrever no e-mail.</li>
     <li><b>Ao navegar no site:</b> dados de acesso, como páginas visitadas, de onde veio a visita e tipo de
@@ -124,6 +134,7 @@ PRIVACIDADE = """  <h1>Política de privacidade</h1>
   <ul>
     <li><b>Entregar o que você comprou e dar suporte:</b> execução do contrato.</li>
     <li><b>Emitir nota fiscal e cumprir obrigações fiscais:</b> cumprimento de obrigação legal.</li>
+    <li><b>Entregar o material grátis:</b> execução do serviço que você pediu ao se cadastrar.</li>
     <li><b>Enviar dicas e novidades por e-mail:</b> o seu consentimento, que você pode retirar a qualquer
     momento pelo link de descadastro em cada e-mail.</li>
     <li><b>Medir e melhorar o site:</b> legítimo interesse, com dados agregados.</li>
@@ -135,7 +146,8 @@ PRIVACIDADE = """  <h1>Política de privacidade</h1>
   pessoais.</p>
 
   <h2>5. Por quanto tempo guardamos</h2>
-  <p>Dados de compra, pelo prazo exigido pela lei fiscal. O e-mail da lista de dicas, até você se descadastrar.
+  <p>Dados de compra, pelo prazo exigido pela lei fiscal. O cadastro do material grátis e o e-mail da lista de
+  dicas, até você se descadastrar ou pedir a exclusão.
   Mensagens de suporte, enquanto forem necessárias para atender você.</p>
 
   <h2>6. Seus direitos</h2>
@@ -159,5 +171,5 @@ PRIVACIDADE = """  <h1>Política de privacidade</h1>
 dados = dict(empresa=EMPRESA, cnpj=CNPJ, endereco=ENDERECO, email=EMAIL)
 for nome, titulo, corpo in (("termos.html", "Termos de uso", TERMOS), ("privacidade.html", "Política de privacidade",
                                                                      PRIVACIDADE)):
-    (AQUI / nome).write_text(MODELO.format(titulo=titulo, corpo=corpo.format(**dados), **dados), encoding="utf-8")
+    (AQUI / nome).write_text(MODELO.format(titulo=titulo, arquivo=nome, corpo=corpo.format(**dados), **dados), encoding="utf-8")
     print("salvo:", nome)
